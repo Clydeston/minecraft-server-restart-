@@ -17,7 +17,7 @@ namespace SendKeys
         [DllImport("User32.dll")]
         static extern int SetForegroundWindow(IntPtr p);
         static IntPtr hWnd = (IntPtr)0;        
-        static int[] intervals  = new int[] { 5000, 5000, 5000 };
+        static int[] intervals  = new int[] { 90000, 30000};
 
         static string process_name = "";
         static string server_launch_script = "";
